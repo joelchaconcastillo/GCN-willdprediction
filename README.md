@@ -67,25 +67,46 @@ This framework provides a unified implementation of various time-series GNN mode
 
 ## Installation
 
-### Using uv (Recommended)
+**Important**: This framework requires PyTorch and PyTorch Geometric. See [INSTALL.md](INSTALL.md) for detailed installation instructions.
+
+### Quick Install with UV (Recommended)
 
 ```bash
-# Install uv if you haven't already
+# Install UV
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Create virtual environment and install dependencies
+# Create virtual environment
 uv venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install PyTorch
+uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Install PyTorch Geometric and dependencies
+uv pip install torch-geometric torch-geometric-temporal
+
+# Install the framework
 uv pip install -e .
 ```
 
-### Using pip
+### Quick Install with pip
 
 ```bash
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install PyTorch
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Install PyTorch Geometric
+pip install torch-geometric torch-geometric-temporal
+
+# Install the framework
 pip install -e .
 ```
+
+For GPU support, troubleshooting, and other installation options, see [INSTALL.md](INSTALL.md).
 
 ## Quick Start
 
