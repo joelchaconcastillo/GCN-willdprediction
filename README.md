@@ -108,6 +108,12 @@ pip install -e .
 
 For GPU support, troubleshooting, and other installation options, see [INSTALL.md](INSTALL.md).
 
+## Documentation
+
+- **[INSTALL.md](INSTALL.md)**: Detailed installation instructions for UV and pip
+- **[GETTING_STARTED.md](GETTING_STARTED.md)**: Complete tutorial and usage guide
+- **[DATASETS.md](DATASETS.md)**: Comprehensive guide to wildfire datasets
+
 ## Quick Start
 
 ### 1. Prepare Data
