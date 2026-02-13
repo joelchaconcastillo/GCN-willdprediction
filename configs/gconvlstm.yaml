@@ -1,0 +1,32 @@
+model:
+  name: gconvlstm
+  num_nodes: 100
+  in_channels: 5
+  hidden_channels: 64
+  out_channels: 1
+  num_layers: 2
+  K: 3
+  dropout: 0.2
+
+data:
+  data_dir: null
+  graph_type: knn
+  k: 5
+  time_steps: 10
+  prediction_horizon: 1
+  normalize: true
+  batch_size: 32
+  train_ratio: 0.7
+  val_ratio: 0.15
+
+training:
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 1.0e-5
+  patience: 20
+  device: cpu
+
+experiment:
+  seed: 42
+  checkpoint_dir: models/checkpoints
+  results_dir: results
